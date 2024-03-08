@@ -38,16 +38,20 @@ function submitTodo() {
     if (inputOne === '' || inputTwo === '') {
         view.style.display = "block"
     } else {
-        table.splice
         view.style.display = "none"
-        show.innerHTML = `<div class="border border-2 shadow-sm mx-">
+        show.innerHTML =""
+        for (i=0; i < cart.length; i++) {
+            var element = cart[i]
+            show.innerHTML = `<div class="border border-2 shadow-sm mx-5">
                             <h2><label for="">Todo:</label></h2>
                                 <h3>${inputOne}</h3>
                             <h2><label for="">Todo Description:</label></h2>
                                 <h3>${inputTwo}</h3>
                             <p> ${date}</p>
+                            <button onclick="delete">Edit</button>
                         <div>
                     `
+        } 
     }
     document.getElementById("todo").value = ""
     document.getElementById("description").value = ""
@@ -73,8 +77,8 @@ window.submitTodo = submitTodo
 //     }
 // })
 
-// function deleteAll() {
-//     itemarray.splice(0, itemarray.length);
+// function delete() {
+//     todorray.splice(0, todorray.length);
 //     cart()
 // }
 
