@@ -20,12 +20,13 @@
     </div> -->
 
     <div class="my-3 shadow-lg p-3">
-        <div id="view" class="d-none">Fill in the Spaces</div>
+        <div id="view" style="display: none;" class="text-danger text-center text-bold">Fill in the Spaces</div>
         <h1 class="text-center text-success">TODO APPLICATION</h1>
         <input type="text" class="form-control my-3" id="todo">
         <input type="text" class="form-control my-3" id="description">
         <button class="btn btn-success mx-5 px-5 w-50" onclick="submitTodo()">Submit</button>
     </div>
+    <div id="show"></div>
 
     <button onclick="signO()">Sign Out</button>
     <script type="module" src="dashboard.js"></script>

@@ -25,11 +25,15 @@ const auth = getAuth(app);
 function submitTodo(){
     alert("hi")
     let inputOne= document.getElementById("todo").value
-    let inputTwo =document.getElementById("description").value
+    let inputTwo =document.getElementById("description").valuesh
+    let date = new Date
+    console.log(date);
+    let object = {inputOne, inputTwo, date}
+    console.log(object);
     if(inputOne==='' || inputTwo===''){
         view.style.display="block"
     }else{
-
+        show.innerHTML
     }
 }
 window.submitTodo=submitTodo
